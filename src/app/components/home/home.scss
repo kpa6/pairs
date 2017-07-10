@@ -1,0 +1,72 @@
+
+
+.home {
+    margin-top: 50%;
+    position: relative;
+    top: -185px;
+
+	.start-button {
+		font-family: 'Sigmar One', cursive;
+	    color: #345903 !important;
+	    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	    background-color: #79be1e;
+	    background-image: url(/static/images/button_bg.png), url(/static/images/button_bg.png), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
+	    background-image: url(/static/images/button_bg.png), url(/static/images/button_bg.png), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+	    font-size: 25px;
+	    text-shadow: 1px 1px 0 rgba(255,255,255,0.4), 0px 0px 4px #fef800;
+
+	    text-decoration: none !important;
+	    white-space: nowrap;
+	    display: inline-block;
+	    vertical-align: baseline;
+	    position: relative;
+	    cursor: pointer;
+	    padding: 15px 50px;
+	    background-repeat: no-repeat;
+	    background-position: bottom left;
+	    background-image: url(/static/images/button_bg.png);
+	    background-position: bottom left, top right, 0 0, 0 0;
+	    background-clip: border-box;
+	    -moz-border-radius: 8px;
+	    -webkit-border-radius: 8px;
+	    border-radius: 8px;
+	    -moz-box-shadow: 1px 1px 10px -3px #000, 0 0 1px #fff inset;
+	    -webkit-box-shadow: 1px 1px 10px -3px #000, 0 0 1px #fff inset;
+	    box-shadow: 1px 1px 10px -3px #000, 0 0 1px #fff inset;
+	    -webkit-transition: background-position 1s;
+	    -moz-transition: background-position 1s;
+	    transition: background-position 1s;
+
+	    &:hover {
+		    background-color: #89d228;
+	        background-position: top left, bottom right, 0 0, 0 0;
+		    background-image: url(/static/images/button_bg.png), url(/static/images/button_bg.png), -moz-radial-gradient(center bottom, circle, rgba(183,229,45,1) 0,rgba(183,229,45,0) 100px),-moz-linear-gradient(#90de31, #7fc01e);
+		    background-image: url(/static/images/button_bg.png), url(/static/images/button_bg.png), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183,229,45,1)), to(rgba(183,229,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
+		}
+	}
+
+	.logo {
+		max-width: 265px;
+	}
+
+	h1 {
+		color: #345903 !important;
+		letter-spacing: -1.5px;
+		font-family: 'Sigmar One', cursive;
+		font-size: 55px;
+	    margin-top: -22px;
+	    margin-bottom: 15px;	
+		text-shadow: rgb(251, 255, 0) 2px 0px 0px, 
+					 rgb(251, 255, 0) 1.75517px 0.958851px 0px, 
+					 rgb(251, 255, 0) 1.0806px 1.68294px 0px, 
+					 rgb(251, 255, 0) 0.141474px 1.99499px 0px, 
+					 rgb(251, 255, 0) -0.832294px 1.81859px 0px, 
+					 rgb(251, 255, 0) -1.60229px 1.19694px 0px, rgb(251, 255, 0) -1.97998px 0.28224px 0px, 
+					 rgb(251, 255, 0) -1.87291px -0.701566px 0px, 
+					 rgb(251, 255, 0) -1.30729px -1.5136px 0px, 
+					 rgb(251, 255, 0) -0.421592px -1.95506px 0px, 
+					 rgb(251, 255, 0) 0.567324px -1.91785px 0px, 
+					 rgb(251, 255, 0) 1.41734px -1.41108px 0px, 
+					 rgb(251, 255, 0) 1.92034px -0.558831px 0px;
+	}
+}

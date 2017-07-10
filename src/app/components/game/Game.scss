@@ -1,0 +1,94 @@
+.game {
+  max-width: 510px;
+  
+  .field {
+    max-width: 432px;
+    margin: 0 auto;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: rgba(52, 89, 3, 0.95);
+      width: 200%;
+      top: -32px;
+      left: -50%;
+      box-shadow: 0px 0px 9px 2px rgba(251, 255, 0, 0.5);
+      border-radius: 100%;
+    }
+  }
+  .title-logo {
+    max-width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  h1 {
+    color: $light-green;
+
+    &.title {
+      color: #345903 !important;
+      font-family: 'Sigmar One', cursive;
+      font-size: 30px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-top: 5px;  
+      text-shadow: rgb(251, 255, 0) 2px 0px 0px, 
+                   rgb(251, 255, 0) 1.75517px 0.958851px 0px, 
+                   rgb(251, 255, 0) 1.0806px 1.68294px 0px, 
+                   rgb(251, 255, 0) 0.141474px 1.99499px 0px, 
+                   rgb(251, 255, 0) -0.832294px 1.81859px 0px, 
+                   rgb(251, 255, 0) -1.60229px 1.19694px 0px,
+                   rgb(251, 255, 0) -1.97998px 0.28224px 0px, 
+                   rgb(251, 255, 0) -1.87291px -0.701566px 0px, 
+                   rgb(251, 255, 0) -1.30729px -1.5136px 0px, 
+                   rgb(251, 255, 0) -0.421592px -1.95506px 0px, 
+                   rgb(251, 255, 0) 0.567324px -1.91785px 0px, 
+                   rgb(251, 255, 0) 1.41734px -1.41108px 0px, 
+                   rgb(251, 255, 0) 1.92034px -0.558831px 0px;
+    }
+  }
+  .menu {
+  	margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .restart_game, .back-home {
+    float: left;
+    font-size: 12px;
+    font-family: 'Sigmar One', cursive;
+    text-transform: uppercase;
+	  color: #daf711;
+    background: #679e02;
+    padding: 7px 12px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s ease;
+	  -moz-transition: background-color 0.3s ease;
+  	-ms-transition: background-color 0.3s ease;
+	  transition: background-color 0.3s ease;
+
+    i {
+      margin-right: 6px;
+      font-size: 23px;
+      vertical-align: middle;
+      &:before {
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+      }
+    }
+    span {
+      vertical-align: middle;
+      display: inline-block;
+      height: 17px;
+      text-shadow: 0px 0px 1px rgba(0,0,0,0.5), 1px 1px 0px rgba(0,0,0,0.5);
+    }
+    &:hover {
+    	background-color: #426503;
+    }
+  }
+  .restart_game {
+    margin-left: 9px;
+  }
+}

@@ -1,0 +1,104 @@
+.card {
+	width: 66px;
+	height: 66px;
+	border-radius: 8px;		
+	cursor: pointer;
+	float: left;
+	margin-right: 7px;
+	margin-bottom: 10px;
+	position: relative;
+
+	&:nth-child(6n) {
+		margin-right: 0px;
+	}
+	&.openedCard {
+		-webkit-transition: -webkit-transform 0.4s ease-in-out;
+		-moz-transition: -moz-transform 0.4s ease-in-out;
+		-ms-transition: -ms-transform 0.4s ease-in-out;
+		 transition: transform 0.4s ease-in-out;
+
+		-webkit-perspective: 0px; 
+		-moz-perspective: 0px;  
+		-ms-perspective: 0px;  
+		 perspective: 0px;
+
+	    -webkit-transform: rotateY(180deg) !important;  -webkit-transform-style: preserve-3d;
+	     -moz-transform: rotateY(180deg) !important;     -moz-transform-style: preserve-3d;
+	      -ms-transform: rotateY(180deg) !important;      -ms-transform-style: preserve-3d;
+	          transform: rotateY(180deg) !important;          transform-style: preserve-3d;
+	}
+	&.closedCard {
+		-webkit-transition: -webkit-transform 0.4s ease-in-out;
+		-moz-transition: -moz-transform 0.4s ease-in-out;
+		-ms-transition: -ms-transform 0.4s ease-in-out;
+		 transition: transform 0.4s ease-in-out;
+
+	    -webkit-perspective: 0px; 
+		-moz-perspective: 0px;  
+		-ms-perspective: 0px;  
+		 perspective: 0px;
+
+	  -webkit-transform: rotateY(0deg) !important;  -webkit-transform-style: preserve-3d;
+	     -moz-transform: rotateY(0deg) !important;     -moz-transform-style: preserve-3d;
+	      -ms-transform: rotateY(0deg) !important;      -ms-transform-style: preserve-3d;
+	          transform: rotateY(0deg) !important;          transform-style: preserve-3d;
+	}
+	&.hiddenCard {
+		cursor: default;
+		// height: 0;
+
+		img{
+			opacity: 0;
+
+			-webkit-transition: opacity 1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			 transition: opacity 1s ease-in-out;
+		}
+	}		
+
+}
+.front {
+	-webkit-backface-visibility: hidden;		
+	-webkit-perspective: 0px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: translateZ( 0px );
+
+	-moz-backface-visibility: hidden;		
+	-moz-perspective: 0px;
+	-moz-transform-style: preserve-3d;
+	-moz-transform: translateZ( 0px );
+
+	-ms-backface-visibility: hidden;		
+	-ms-perspective: 0px;
+	-ms-transform-style: preserve-3d;
+	-ms-transform: translateZ( 0px );
+
+	 backface-visibility: hidden;		
+	 perspective: 0px;
+	 transform-style: preserve-3d;
+	 transform: translateZ( 0px );
+
+		position: absolute;
+		left: 0px;
+		top:0px;
+}
+.back {		
+	-webkit-backface-visibility: hidden;		
+	-webkit-transform: rotateY( 180deg ) translateZ( 1px );
+
+	-moz-backface-visibility: hidden;		
+	-moz-transform: rotateY( 180deg ) translateZ( 1px );
+
+	-ms-backface-visibility: hidden;		
+	-ms-transform: rotateY( 180deg ) translateZ( 1px );
+
+	 backface-visibility: hidden;		
+	 transform: rotateY( 180deg ) translateZ( 1px );
+		
+		position: absolute;
+		left: 0px;
+		top:0px;
+}	
+
