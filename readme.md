@@ -2,7 +2,6 @@
 
 ## Getting Started
 
-Clone Repo
 
 ````
 git clone git@github.com:kpa6/pairs.git
@@ -10,6 +9,7 @@ git clone git@github.com:kpa6/pairs.git
 
 cd into cloned folder
 
+```
 npm install
 ````
 

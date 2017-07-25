@@ -1,6 +1,6 @@
 import React from "react";
-import Preloader from '../Preloader/Preloader';
-import Modal from '../Modal/Modal';
+import Preloader from '../preloader/preloader';
+import Modal from '../modal/Modal';
 
 function PageTop(props) {
   return (

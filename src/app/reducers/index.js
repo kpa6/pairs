@@ -4,7 +4,7 @@ import { routerReducer as router } from 'connected-next-router';
 import cards from './cards';
 import preloader from './preloader';
 import modal from './modal';
-import clicksCounter from './clicksCounter';
+import clicksCounter from './clickscounter';
 import gameStarted from './gameStarted';
 
 

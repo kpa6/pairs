@@ -28,7 +28,7 @@ const defaultState = {
 	gameStarted: false
 };
 
-const composeEnhancers = composeWithDevTools({ realtime: true })
+const composeEnhancers = dev && composeWithDevTools({ realtime: true });
 
 const createComposedStore = (initialState, options) => {
 	if (options.asPath)

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Router from 'next/router'
 import Context from '../context'
 
-import Card from '../components/Card/Card'
+import Card from '../components/card/card'
 import Timer from '../components/timer/timer'
 import ClicksCounter from '../components/clickscounter/clickscounter'
 import PageTop from '../components/common/pageTop'

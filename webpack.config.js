@@ -28,6 +28,7 @@ var webpackConfig = {
     rules: [{
       test: /.jsx?$/,
       include: Path.join(__dirname, './src/app'),
+      exclude: /node_modules/,
       use:{
         loader: 'babel-loader',
       }
@@ -37,7 +38,7 @@ var webpackConfig = {
         use: [
             !isProduction ? 'style-loader' : MiniCssExtractPlugin.loader,
             { loader: 'css-loader', options: { url: false, sourceMap: !isProduction } },
-            { loader: 'sass-loader', options: { sourceMap: !isProduction } }
+            { loader: 'sass-loader', options: { sourceMap: !isProduction, includePaths: Path.join(__dirname, './src/app'), } }
         ],
       }],
     },
