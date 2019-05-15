@@ -1,15 +1,20 @@
 const express = require('express');
-const app = express();
-
-app.use(express.static('./'));
-app.use(express.static('dist'));
-
-app.get('*', (req, res) => {
-  res.sendFile(`${__dirname}/dist/index.html`);
-});
-
+const next = require('next')
+const dev = process.env.NODE_ENV !== 'production'
 const port = process.env.PORT || 3000;
+const app = next({ dev, dir: './src/app', distDir: 'build' })
+const handle = app.getRequestHandler()
 
-app.listen(port, () => {
-  console.log('app listening on', port);
-});
+app.prepare().then(() => {
+  const server = express();
+
+  server.get('*', (req, res) => handle(req, res) )
+
+  server.listen(port, (err) => {
+    if (err) throw err
+    console.log(`> Ready on http://localhost:${port}`)
+  })
+}).catch((ex) => {
+  console.error(ex.stack)
+  process.exit(1)
+})

@@ -7,9 +7,9 @@
     top: 0px;
     left: 0px;
     z-index: -1;
-    transition: opacity 0.3s ease;
 
 	&.open {
+		transition: opacity 0.3s ease;
 		z-index: 1;
 		opacity: 1;
 	}

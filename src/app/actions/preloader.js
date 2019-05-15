@@ -1,8 +1,9 @@
-export function startLoading(){
-  return (dispatch)=>{
-    return new Promise((resolve, reject)=>{
-      dispatch({ type: 'START_LOADING' })
-      resolve();
-    })
-  }
-}
+import { END_LOADING, START_LOADING } from '../constants'
+
+export const startLoading = () => ({
+  type: START_LOADING
+})
+
+export const endLoading = () => ({
+  type: END_LOADING
+})

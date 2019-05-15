@@ -1,19 +1,20 @@
+import { START_LOADING, END_LOADING } from '../constants'
+
 function loading(state = {}, action) {
-	switch(action.type) { 
-		case 'START_LOADING': {
+	switch(action.type) {
+		case START_LOADING: {
 			return {
 				loading: true
 			}
-			break;	
 		}
-		case 'END_LOADING': {
+		case END_LOADING: {
 			return {
 				loading: false
 			}
-			break;	
 		}
 		default:
 			return state;
 	}
 }
+
 export default loading;

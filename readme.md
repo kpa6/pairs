@@ -8,12 +8,12 @@ Clone Repo
 git clone git@github.com:kpa6/pairs.git
 ````
 
-cd into cloned folder 
+cd into cloned folder
 
 npm install
 ````
 
-### Start development server 
+### Start development server
 
 ````
 npm run dev

@@ -1,11 +1,11 @@
-export function closeModal() {
+import { CLOSE_MODAL, SHOW_MODAL } from '../constants'
+
+export const closeModal = () => ({
+  type: CLOSE_MODAL
+})
+
+export const openModal = (time) => {
   return {
-    type: 'CLOSE_MODAL'
-  }
-}
-export function openModal(time) {
-  return {
-    type: 'SHOW_MODAL',
-    time
+    type: SHOW_MODAL, time
   }
 }

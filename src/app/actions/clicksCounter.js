@@ -1,5 +1,5 @@
-export function incrementClicks() {
-  return {
-    type: 'INCREMENT_CLICKS'
-  }
-}
+import { INCREMENT_CLICKS } from '../constants'
+
+export const incrementClicks = () => ({
+  type: INCREMENT_CLICKS
+})

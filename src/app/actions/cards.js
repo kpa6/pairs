@@ -1,31 +1,10 @@
-export function openCard(cardType,index) {
-	return (dispatch)=>{
-    return new Promise((resolve,reject) => {
-      dispatch({    
-    		type: 'OPEN_CARD',
-    	 	cardType,
-        index
-      })
+import { START_OPEN_CARD, ENABLE_CARDS } from "../constants";
 
-      setTimeout(()=>{
-        dispatch({    
-          type: 'CLOSE_CARDS'
-        })
+export const enableCards = () => ({
+  type: ENABLE_CARDS
+})
 
-        dispatch({    
-          type: 'CHECK_IS_FINISH'
-        })
-        dispatch({
-          type: 'ENABLE_CARDS'
-        })
-        resolve();
-      }, 2000);
-
-    })
-	};
-}
-export function enableCards() {
-  return {
-    type: 'ENABLE_CARDS'
-  }
-}
+export const startOpenCard = (key, index) => ({
+  type: START_OPEN_CARD,
+  payload: { key, index }
+})

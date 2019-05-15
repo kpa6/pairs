@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
+import { routerReducer as router } from 'connected-next-router';
+
 import cards from './cards';
 import preloader from './preloader';
 import modal from './modal';
 import clicksCounter from './clicksCounter';
-import { routerReducer } from 'react-router-redux';
+import gameStarted from './gameStarted';
 
 
 const rootReducer = combineReducers({
@@ -11,7 +13,8 @@ const rootReducer = combineReducers({
   clicksCounter,
   preloader,
   modal,
-  routing: routerReducer
-}); 
+  gameStarted,
+  router
+});
 
 export default rootReducer;

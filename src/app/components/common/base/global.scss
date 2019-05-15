@@ -12,11 +12,27 @@ body {
   font-size: 16px;
   background: url(/static/images/background.jpg) center no-repeat;
   background-size: cover;
-  height: 100%;
 }
 .wrapper {
 	max-width: 610px;
 	margin: 0 auto;
+}
+.mobile-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    max-width: 415px;
+    text-align: center;
+    height: 115px;
+    font-size: 32px;
+    line-height: 1.2;
+    padding: 9px;
+    color: #1f3c27;
+    text-shadow: 1px 1px 1px rgb(249, 252, 183);
 }
 .container {
 	width: 100%;
